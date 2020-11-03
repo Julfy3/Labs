@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Семинар №2</title>
+</head>
+<body>
+	<script> 
+		var multiply = new Function("x,y", "return x + y")
+		var theAnswer = multiply(7, 6);
+		var array = [ 1, 2, "g", 3 ];
+		var a;
+		for (a=0 ; a<4; a++)
+		{
+			if (typeof array[a]!= "number")
+			array[a]=0;
+			else
+			array[a]=array[a]*array[a];
+		}
+		alert (theAnswer)
+		alert (array[0])
+		alert (array[1])
+		alert (array[2])
+		alert (array[3])
+		
+	</script>
+</body>
+</html>
